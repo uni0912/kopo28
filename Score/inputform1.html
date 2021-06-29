@@ -1,0 +1,79 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<html>
+	<head bgcolor="Lavender">
+	<meta charset="utf-8">
+
+	<h2 style="color:MediumPurple">성적입력추가</h2>
+	<style>
+		table.type07 {
+			border-collapse: collapse;
+			text-align: left;
+			line-height: 1.5;
+			border: 1px solid #ccc;
+			margin: 20px 10px;
+		}
+
+		table.type07 thead {
+			border-right: 1px solid #ccc;
+			border-left: 1px solid #ccc;
+			background: mediumpurple;
+			text-align: center;
+		}
+
+		table.type07 thead th {
+			padding: 10px;
+			font-weight: bold;
+			vertical-align: top;
+			color: #fff;
+		}
+
+		table.type07 tbody th {
+			width: 150px;
+			padding: 10px;
+			font-weight: bold;
+			vertical-align: top;
+			border-bottom: 1px solid #ccc;
+			background: lightsteelblue;
+		}
+
+		table.type07 td {
+			width: 350px;
+			padding: 10px;
+			vertical-align: top;
+			border-bottom: 1px solid #ccc;
+		}
+	</style>
+	</head>
+	<body bgcolor="Lavender">
+	<form method=post action="insertDB.jsp" name="frm">
+	
+	<table class="type07" width=500>
+	<tbody>
+	<tr>
+	<th width=100 align=center>이름</th>
+	<td align=center><input type="text" required="required" autocomplete='off' onpaste="return false;" name="name" onKeypress="if(!(event.keyCode <47 && event.keyCode>58))event.returnValue=false;"></td>
+	</tr>
+	<tr>
+	<th width=100 align=center>학번</th>
+	<td align=center>자동부여</td>
+	</tr>
+	<tr>
+	<th width=100 align=center>국어</th>
+	<td align=center><input type='number' min='0' max='100' required="required" autocomplete='off' onpaste="return false;" name="kor" size=50></td>
+	</tr>
+	<tr>
+	<th width=100 align=center>영어</th>
+	<td align=center><input type='number' min='0' max='100' required="required" autocomplete='off' onpaste="return false;" name="eng" size=50></td>
+	</tr>
+	<tr>
+	<th width=100 align=center>수학</th>
+	<td align=center><input type='number' min='0' max='100' required="required" autocomplete='off' onpaste="return false;" name="mat" size=50></td>
+	</tr>
+	</tbody>
+	</table>
+	<input type="submit" value="추가">
+	</form>
+	
+	</body>
+</html>
